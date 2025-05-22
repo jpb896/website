@@ -1,0 +1,21 @@
+h1, h2, h3, h4, h5, h6, p, a {
+	font-family: "Segoe UI Variable Display", Segoe UI, "Roboto", Arial, sans-serif
+}
+
+a {
+  background-color: white; /* Green */
+  border: 2px solid purple;
+  color: purple;
+  padding: 8px 8px;
+  margin: 4px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+a:hover {
+	background-color: purple;
+	color: white;
+}
