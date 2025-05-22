@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 a {
-  background-color: white; /* Green */
+  background-color: white;
   border: 2px solid purple;
   color: purple;
   padding: 8px 8px;
@@ -12,10 +12,22 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  transition-duration: 0.4s;
+  transition-duration: 1s;
 }
 
 a:hover {
 	background-color: purple;
 	color: white;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px pink, 0 0 20px pink, 0 0 30px pink, 0 0 40px pink, 0 0 50px pink, 0 0 60px pink, 0 0 70px pink;
+  }
+  to {
+    text-shadow: 0 0 20px purple, 0 0 30px purple, 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple, 0 0 80px purple;
+  }
 }
