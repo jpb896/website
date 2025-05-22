@@ -15,6 +15,10 @@ a {
   transition-duration: 1s;
 }
 
+img {
+	height: 350px;
+}
+
 a:hover {
 	background-color: purple;
 	color: white;
